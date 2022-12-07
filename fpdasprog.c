@@ -69,9 +69,15 @@ void case2(){
         cek();
         
     }else if(count==1){
-        srand(time(0));
-        baris=rand()%3;
-        kolom=rand()%3;
+        // srand(time(0));
+        // baris=rand()%3;
+        // kolom=rand()%3;
+        for(int i=0;i<3;i++){
+            for(int j=0;j<3;j++){
+                baris=i;
+                kolom=j;
+            }
+        }
         count=0;
         cek();
     }
